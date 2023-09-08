@@ -65,6 +65,10 @@ module.exports = {
         },
       },
       {
+        date: '2023.05.23',
+        activity: '교내 생성형 AI 활용 공모전 대상 수상',
+      },
+      {
         date: '2023.05 ~ 2023.06',
         activity: 'MBTI 성격유형 테스트 여행지편 개발',
         links: {
@@ -72,18 +76,17 @@ module.exports = {
         },
       },
       {
-        date: '2023.08',
-        activity: '그림 일기를 그려주는 AI 서비스, GGOOMI 개발',
-        links: {
-          github: 'https://github.com/prompter-day-2023',
-        },
-      },
-
-      {
         date: '2020.06~',
         activity: '여행 블로그 TRIP IN WOLRD 개발 중',
         links: {
           github: 'https://github.com/WAGGLE-TEAM',
+        },
+      },
+      {
+        date: '2023.08',
+        activity: '그림 일기를 그려주는 AI 서비스, GGOOMI 개발',
+        links: {
+          github: 'https://github.com/prompter-day-2023',
         },
       },
     ],
@@ -124,6 +127,15 @@ module.exports = {
         title: '그림일기를 그려주는 AI 서비스, 꾸미(GGOOMI) 개발',
         description:
           'SK텔레콤과 OpenAI가 개최한 Generative AI 해커톤인 Prompter Day Seoul 2023 참가를 위해 개발한 서비스입니다. GPT turbo 3.5, Dall-E, Deepl API를 사용하여 일기 내용을 요약하고 텍스트를 추출하여 그림일기를 생성한 후, 라인드로잉으로 변환하여 최종적으로 컬러링 도안을 저장하고 출력할 수 있는 결과물을 제공합니다. 백엔드 개발과 프롬프팅 개선에 주로 기여하였습니다. 2주도 안 되는 짧은 시간동안 아이디어 기획부터 MVC 구현까지 무사히 마쳤습니다.',
+        techStack: ['Flask', 'Docker', 'GitHub Action', 'Prompting'],
+        thumbnailUrl: 'ggoomi_draw.jpg',
+        links: {
+        },
+      },
+      {
+        title: '교내 생성형 AI 활용 공모전 대상 수상',
+        description:
+          'Midjourney와 Playgroundai를 활용하여 제시된 주제에 맞는 그림을 위해 프롬프팅하는 공모전에서 대상을 수상하였습니다. 제한된 시간 내에 그림을 생성하고 선별하고 발표하는 과정이 무척이나 생소하였지만, 최선을 다 하였기에 이런 좋은 결과를 얻을 수 있었던 것 같습니다. 프롬프팅과 생성형 AI에 대한 이해도를 높일 수 있었습니다.',
         techStack: ['Flask', 'Docker', 'GitHub Action', 'Prompting'],
         thumbnailUrl: 'ggoomi_draw.jpg',
         links: {
