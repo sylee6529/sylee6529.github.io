@@ -136,8 +136,8 @@ module.exports = {
         title: '교내 생성형 AI 활용 공모전 대상 수상',
         description:
           'Midjourney와 Playgroundai를 활용하여 제시된 주제에 맞는 그림을 위해 프롬프팅하는 공모전에서 대상을 수상하였습니다. 제한된 시간 내에 그림을 생성하고 선별하고 발표하는 과정이 무척이나 생소하였지만, 최선을 다 하였기에 이런 좋은 결과를 얻을 수 있었던 것 같습니다. 프롬프팅과 생성형 AI에 대한 이해도를 높일 수 있었습니다.',
-        techStack: ['Flask', 'Docker', 'GitHub Action', 'Prompting'],
-        thumbnailUrl: 'ggoomi_draw.jpg',
+        techStack: [],
+        thumbnailUrl: 'generative_ai.jpg',
         links: {
         },
       },
