@@ -120,7 +120,7 @@ module.exports = {
         title: 'MBTI 성격유형테스트 여행지편 개발',
         description:
           '지정된 12가지의 문항의 선택지를 선택하면, MBTI 성격 분류에 따라 여행지와 여행 스타일 결과를 알려주는 성격 유형 테스트 개발을 진행하였습니다. 4년차 현직자이신 백엔드 팀원분과 함께 하면서, VPC 피어링, Docker compose 사용법 등 인프라와 CI/CD에 대한 것을 새롭게 알게 되었고 헥사고날 아키텍처와 DDD 구현을 하며 아키텍처에 대한 공부와 고민을 할 수 있었던 값진 시간이었습니다.',
-        techStack: ['NextJS', 'typescript', 'Naver Cloud', 'Docker'],
+        techStack: ['NestJS', 'typescript', 'Naver Cloud', 'Docker'],
         thumbnailUrl: 'mbti_test.png',
       },
       {
