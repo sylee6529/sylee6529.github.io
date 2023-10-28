@@ -46,7 +46,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby clean && gatsby build && cp content/pages/google7732060f42ccecc7.html public/",
+    "build": "gatsby clean && gatsby build && cp google7732060f42ccecc7.html public/",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "deploy": "gatsby clean && gatsby build && gh-pages -d public",
