@@ -59,7 +59,7 @@ function Seo({ description, title }) {
         {
           property: `google-site-verification`,
           content: site.siteMetadata.googleSearchConsole,
-        }
+        },
       ]}
     />
   );
