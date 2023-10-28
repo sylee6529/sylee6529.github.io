@@ -4,6 +4,7 @@ module.exports = {
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://sylee6529.gihub.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
+  googleSearchConsole: `OXKYnuNnw42u33HQpaaIDLhpx_zvU_gfKODFBBzz2oI`, // Google Search Console verification code
   comments: {
     utterances: {
       repo: `sylee6529/sylee6529.github.io`, // `zoomkoding/zoomkoding-gatsby-blog`,
