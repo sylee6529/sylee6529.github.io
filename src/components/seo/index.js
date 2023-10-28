@@ -58,7 +58,7 @@ function Seo({ description, title }) {
         },
         {
           property: `google-site-verification`,
-          content: site.siteMetadata.googleSearchConsole,
+          content: `OXKYnuNnw42u33HQpaaIDLhpx_zvU_gfKODFBBzz2oI`,
         },
       ]}
     />
