@@ -7,7 +7,8 @@ tag: Java
 categories: Java
 ---
 
-### 1. 클래스가 필요한 이유
+
+## **1. 클래스가 필요한 이유**
 
 학생 정보를 출력하는 코드를 보며 이해해보자.
 
@@ -28,7 +29,9 @@ System.out.println("이름: " + student2Name + " 나이: " + student2Age + " 성
 
 → 문제: 학생이 늘어날 때마다 변수와 출력하는 코드를 추가 선언해야 한다.
 
-✅ **배열을 사용하여 정보를 담자**
+<br/>
+
+###  배열을 사용하여 정보를 담자
 
 ```java
 String[] studentNames = {"학생1", "학생2"};
@@ -42,7 +45,10 @@ for (int i = 0; i < studentNames.length; i++) {
 
 배열에 값을 추가하기만 하면, 학생 정보를 늘릴 수 있고 불필요한 코드를 줄일 수 있게 되었다.
 
-**배열 사용의 한계**
+
+<br/>
+
+### 배열 사용의 한계
 
 배열을 사용하여 변경을 최소화했지만, 한 학생의 데이터가 여러 배열에 나누어져 있어, 데이터를 변경할 때 매우 조심해서 작업해야 한다. 
 
@@ -50,7 +56,9 @@ for (int i = 0; i < studentNames.length; i++) {
 
 사람이 관리하기 좋기 위해서는, ‘학생’이라는 개념을 하나로 묶는 것이다. **= 클래스**
 
-### 2. 클래스 사용해보기
+<br/>
+
+## **2. 클래스 사용해보기**
 
 ```java
 public class Student {
@@ -61,6 +69,7 @@ public class Student {
 ```
 
 이렇게 정의한 클래스는 name, age, grade라는 멤버 변수(혹은 필드)를 가진다.
+
 
 이제 위의 클래스를 사용해보자.
 
@@ -80,7 +89,9 @@ System.out.println("이름: " + student1.name + " 나이: " + student1.age + " �
 System.out.println("이름: " + student2.name + " 나이: " + student2.age + " 성적: " + student2.grade);
 ```
 
-**클래스와 사용자 정의 타입**
+<br/>
+
+### 클래스와 사용자 정의 타입
 
 타입은 데이터의 종류나 형태를 나타낸다. (int: 정수 타입, String: 문자 타입)
 
@@ -90,7 +101,9 @@ System.out.println("이름: " + student2.name + " 나이: " + student2.age + " �
 
 설계도인 클래스를 사용해서 실제 메모리에 만들어진 실체를 **객체 또는 인스턴스**라고 한다.
 
-**메모리에서 일어나는 일**
+<br/>
+
+### 메모리에서 일어나는 일
 
 ![사진](./img1.png)
 
@@ -101,11 +114,15 @@ Student 클래스의 객체를 생성하면
 - 앞서 선언한 변수 `Student student1` 에 생성된 객체의 참조값을 보관한다.
 - 따라서 `Student student1` 변수를 통해서 메모리에 있는 실제 객체를 접근(참조)할 수 있다.
 
-**참조값을 변수에 보관해야 하는 이유**
+<br/>
+
+### 참조값을 변수에 보관해야 하는 이유
 
 `new Student();` 코드 자체는 아무런 이름이 없다. 단순히 Student 클래스를 기반으로 메모리에 실제 객체를 만드는 것일 뿐이고, 반환되는 참조값을 어딘가 보관해두어야 객체에 접근할 수 있다. 우리는 `Student student1` 변수에 참조값을 저장해두었으므로 실제 메모리에 존재하는 객체에 접근할 수 있다.
 
-### 3. 객체 접근하기
+<br/>
+
+## **3. 객체 접근하기**
 
 객체에 접근하려면, `.` (dot)을 사용하면 된다.
 
@@ -120,23 +137,25 @@ student1.name = "학생1";
 
 값을 읽는 것도 위와 같은 방식으로, `student1.name` 과 같이 사용하면 된다.
 
-### 4. 클래스, 객체, 인스턴스
+<br/>
 
-**클래스 (Class)**
+## **4. 클래스, 객체, 인스턴스**
+
+### 클래스 (Class)
 
 - 객체를 생성하기 위한 ‘틀’, ‘설계도’
 - 객체가 가져야 할 속성(변수)과 기능(메서드)를 정의함
 
-**객체 (Object)**
+### 객체 (Object)
 
 - 클래스에서 정의한 속성과 기능을 가진 실체. 객체는 서로 독립적인 상태를 가짐
 
-**인스턴스 (Instance)**
+### 인스턴스 (Instance)
 
 - 특정 클래스로부터 생성된 객체. 객체와 인스턴스는 자주 혼용됨
 - 주로 객체가 어떤 클래스에 속해 있는지 강조할 때 사용함 (ex. `student1`은 `Student` 클래스의 인스턴스다)
 
-**객체 vs 인스턴스**
+### 객체 vs 인스턴스
 
 - 둘다 클래스에서 나온 실체라는 의미에서 비슷하게 사용됨
 - 인스턴스는 객체보다 좀 더 관계에 초점을 맞춘 단어임.
@@ -145,7 +164,9 @@ student1.name = "학생1";
 
 하지만 보통 둘을 구분하지 않고 사용한다.
 
-### 5. 배열을 도입해보자
+<br/>
+
+## **5. 배열을 도입해보자**
 
 ```java
 System.out.println("이름: " + student1.name + " 나이: " + student1.age + " 성적: " + student1.grade);
@@ -177,7 +198,7 @@ students[1] = student2;
 
 ![사진](./img5.png)
 
-**배열에 들어있는 객체 사용하기**
+### 배열에 들어있는 객체 사용하기
 
 ```java
 System.out.println("이름: " + students[0].name);
@@ -185,7 +206,9 @@ System.out.println("이름: " + students[0].name);
 
 - `students[0].name` = `x005[0].name` = `x001.name` 에 접근하는 것과 같음.
 
-**배열 사용하여 코드 중복 줄이기**
+<br/>
+
+### **배열 사용하여 코드 중복 줄이기
 
 ```java
 // Student[] students = new Student[] {student1, student2};
@@ -204,7 +227,9 @@ for (int i = 0; i < students.length; i++) {
 
 for문으로 배열을 돌며, 출력을 최적화할 수 있다.
 
-**향상된 for문**
+<br/>
+
+### 향상된 for문
 
 ```java
 for(Student s : students) {
@@ -212,15 +237,15 @@ for(Student s : students) {
         }
 ```
 
----
+<br/>
 
-### 사용한 IntelliJ단축키
+## **📷 사용한 IntelliJ단축키**
 
 - **“psvm” + Enter**: `public static void main(String[] args)` 자동완성
 
 ![사진](./hk1.png)
 
-- **“sout” + Enter**: `System.*out*.println` 자동완성
+- **“sout” + Enter**: `System.out.println` 자동완성
 
 ![사진](./hk2.png)
 
@@ -228,5 +253,10 @@ for(Student s : students) {
 
 ![사진](./hk3.png)
 
-- “iter”: **for each** 문 자동생성
+- **“iter”**: for each 문 자동생성
 ![사진](./hk4.png)
+
+
+```toc
+
+```
