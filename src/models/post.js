@@ -1,6 +1,6 @@
 export default class Post {
   constructor(node) {
-    const { id, html, excerpt, frontmatter, fields } = node;
+    const { id, html, excerpt, frontmatter, fields, tableOfContents } = node;
     const { slug } = fields;
     const { emoji, categories, title, author, date } = frontmatter;
 
@@ -13,5 +13,6 @@ export default class Post {
     this.author = author;
     this.date = date;
     this.categories = categories.split(' ');
+    this.tableOfContents = tableOfContents;
   }
 }
