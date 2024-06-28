@@ -251,7 +251,7 @@
 
 .markdown p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-family: $font-family;
 }
 
@@ -296,7 +296,7 @@
 
 .markdown :not(pre) > code.language-text {
   background: rgba(135, 131, 120, 0.15);
-  color: #eb5757;
+  color: rgba(51, 126, 169, 1);
   overflow-wrap: break-word;
 }
 
@@ -652,18 +652,21 @@
 .markdown details,
 .markdown dl,
 .markdown ol,
-.markdown p,
 .markdown pre,
 .markdown table,
 .markdown ul {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
+}
+
+.markdown p {
+  margin-bottom: 0px;
 }
 
 .markdown hr {
   height: 0.25em;
   padding: 0;
-  margin: 24px 0;
+  margin: 30px 0;
   background-color: var(--markdown-border-color);
   border: 0;
 }
@@ -689,7 +692,7 @@
 .markdown h5,
 .markdown h6 {
   margin-top: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -700,10 +703,13 @@
 
 .markdown h2 {
   font-size: 1.5em;
+  color: #006dd7;
+  font-weight: 700;
 }
 
 .markdown h3 {
   font-size: 1.25em;
+  font-weight: 700;
 }
 
 .markdown h4 {
@@ -746,12 +752,17 @@
   text-align: -webkit-match-parent;
 }
 
+
 .markdown li > p {
-  margin-top: 16px;
+  margin-top: 0px;
+}
+
+.markdown > ul > li:not(:first-child) {
+  margin-top: 12px;
 }
 
 .markdown li + li {
-  margin-top: 0.25em;
+  // margin-top: 0.25em;
 }
 
 .markdown dl {
@@ -835,6 +846,7 @@
 
 .markdown .highlight {
   margin-bottom: 16px;
+  color: red;
 }
 
 .markdown .highlight pre {
@@ -862,6 +874,7 @@
   word-wrap: normal;
   background-color: initial;
   border: 0;
+  font-size: 0.9em;
 }
 
 .markdown .commit-tease-sha {
@@ -1009,17 +1022,32 @@
   vertical-align: middle;
 }
 
+.table-of-contents a.active {
+  background-color: #DFDFDF;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.table-of-contents a:hover {
+  background-color: #f0f0f0;
+}
+
 // added for toc
 .markdown .table-of-contents {
-  // &::before {
-  //   padding-left: 35px;
-  //   content: 'Table of Contents';
-  //   font-weight: 500;
-  //   font-size: 15px;
-  //   margin-bottom: 3px;
-  // }
+  &::before {
+    // padding-left: 35px;
+    content: 'Table of Contents';
+    // font-weight: 500;
+    // font-size: 15px;
+    // margin-bottom: 3px;
 
-  @media (max-width: 1300px) {
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  @media (max-width: 1600px) {
     display: none;
   }
 
@@ -1044,6 +1072,13 @@
         color: var(--secondary-text-color);
         font-size: 14px;
         border-bottom: none;
+
+        padding: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
       }
     }
 
